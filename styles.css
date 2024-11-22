@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+.cell-image {
+    position: relative;
+    text-align: center;
+}
+
+.main-cell-img {
+    width: 100%;
+    height: auto;
+}
+
+.organelles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.organelle {
+    position: absolute;
+    border: 2px solid #ffeb3b;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    
+}
+
+.organelle:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    
+}
+
+.content.visible {
+    opacity: 1;
+}
